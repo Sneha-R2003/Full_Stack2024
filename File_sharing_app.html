@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>File Sharing Web App</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+        }
+
+        .file-sharing-container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .main {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .upload-form {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 20px;
+        }
+
+        .file-input {
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        .upload-btn {
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        .upload-btn:hover {
+            background-color: #0056b3;
+        }
+
+        .files-list {
+            width: 100%;
+        }
+
+        .files-list h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .files-list ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .files-list li {
+            display: flex;
+            justify-content: space-between;
+            padding: 10px;
+            border-bottom: 1px solid #ccc;
+        }
+
+        .download-btn {
+            padding: 5px 10px;
+            background-color: #28a745;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        .download-btn:hover {
+            background-color: #218838;
+        }
+    </style>
+</head>
+<body>
+    <div class="file-sharing-container">
+        <header class="header">
+            <h1>File Sharing App</h1>
+        </header>
+        <main class="main">
+            <form class="upload-form">
+                <input type="file" name="file" id="file" class="file-input">
+                <button type="submit" class="upload-btn">Upload</button>
+            </form>
+            <div class="files-list">
+                <h2>Uploaded Files</h2>
+                <ul>
+                    <li>File1.pdf <button class="download-btn">Download</button></li>
+                    <li>File2.jpg <button class="download-btn">Download</button></li>
+                    <li>File3.docx <button class="download-btn">Download</button></li>
+                </ul>
+            </div>
+        </main>
+    </div>
+</body>
+</html>
